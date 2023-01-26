@@ -1,0 +1,83 @@
+:root {
+  --digit-default-width: 24.75px;
+  --digit-default-height: 59.75px;
+  --white: #ffffff;
+}
+.flexbox {
+  display: flex;
+  display: flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+.digits-flex-container {
+  flex-direction: row;
+}
+.digit {
+  background: var(--white);
+  background-image: url(../images/digits.png);
+  background-repeat: no-repeat;
+  background-size: var(--digit-default-width)
+    calc((var(--digit-default-height) * 20));
+  height: var(--digit-default-height);
+  width: var(--digit-default-width);
+}
+.zero-digit {
+  background-position: center 0;
+}
+.one-digit {
+  background-position: center calc(1 * var(--digit-default-height) * -1);
+}
+.two-digit {
+  background-position: center calc(2 * var(--digit-default-height) * -1);
+}
+.three-digit {
+  background-position: center calc(3 * var(--digit-default-height) * -1);
+}
+.four-digit {
+  background-position: center calc(4 * var(--digit-default-height) * -1);
+}
+.five-digit {
+  background-position: center calc(5 * var(--digit-default-height) * -1);
+}
+.six-digit {
+  background-position: center calc(6 * var(--digit-default-height) * -1);
+}
+.seven-digit {
+  background-position: center calc(7 * var(--digit-default-height) * -1);
+}
+.eight-digit {
+  background-position: center calc(8 * var(--digit-default-height) * -1);
+}
+.nine-digit {
+  background-position: center calc(9 * var(--digit-default-height) * -1);
+}
+.ten-digit {
+  background-position: center calc(10 * var(--digit-default-height) * -1);
+}
+.eleven-digit {
+  background-position: center calc(11 * var(--digit-default-height) * -1);
+}
+.twelve-digit {
+  background-position: center calc(12 * var(--digit-default-height) * -1);
+}
+.thirteen-digit {
+  background-position: center calc(13 * var(--digit-default-height) * -1);
+}
+.fourteen-digit {
+  background-position: center calc(14 * var(--digit-default-height) * -1);
+}
+.fifteen-digit {
+  background-position: center calc(15 * var(--digit-default-height) * -1);
+}
+.sixteen-digit {
+  background-position: center calc(16 * var(--digit-default-height) * -1);
+}
+.seventeen-digit {
+  background-position: center calc(17 * var(--digit-default-height) * -1);
+}
+.eighteen-digit {
+  background-position: center calc(18 * var(--digit-default-height) * -1);
+}
+.nineteen-digit {
+  background-position: center calc(19 * var(--digit-default-height) * -1);
+}
