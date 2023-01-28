@@ -4,6 +4,8 @@ A simple kaktovik numeric converter both to and from arabic numbers.
 
 Inspired by [this Wikipedia article](https://en.wikipedia.org/wiki/Kaktovik_numerals) and a recent addition into the Unicode catalog.
 
+The **current version** of this project is hosted [here](https://chrisuser.github.io/kaktovik-converter/).
+
 ## F.A.Q.
 
 - **Why a kaktovik converter?**
