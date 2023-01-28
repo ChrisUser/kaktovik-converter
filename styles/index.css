@@ -21,63 +21,63 @@
   height: var(--digit-default-height);
   width: var(--digit-default-width);
 }
-.zero-digit {
+.digit-0 {
   background-position: center 0;
 }
-.one-digit {
+.digit-1 {
   background-position: center calc(1 * var(--digit-default-height) * -1);
 }
-.two-digit {
+.digit-2 {
   background-position: center calc(2 * var(--digit-default-height) * -1);
 }
-.three-digit {
+.digit-3 {
   background-position: center calc(3 * var(--digit-default-height) * -1);
 }
-.four-digit {
+.digit-4 {
   background-position: center calc(4 * var(--digit-default-height) * -1);
 }
-.five-digit {
+.digit-5 {
   background-position: center calc(5 * var(--digit-default-height) * -1);
 }
-.six-digit {
+.digit-6 {
   background-position: center calc(6 * var(--digit-default-height) * -1);
 }
-.seven-digit {
+.digit-7 {
   background-position: center calc(7 * var(--digit-default-height) * -1);
 }
-.eight-digit {
+.digit-8 {
   background-position: center calc(8 * var(--digit-default-height) * -1);
 }
-.nine-digit {
+.digit-9 {
   background-position: center calc(9 * var(--digit-default-height) * -1);
 }
-.ten-digit {
+.digit-a {
   background-position: center calc(10 * var(--digit-default-height) * -1);
 }
-.eleven-digit {
+.digit-b {
   background-position: center calc(11 * var(--digit-default-height) * -1);
 }
-.twelve-digit {
+.digit-c {
   background-position: center calc(12 * var(--digit-default-height) * -1);
 }
-.thirteen-digit {
+.digit-d {
   background-position: center calc(13 * var(--digit-default-height) * -1);
 }
-.fourteen-digit {
+.digit-e {
   background-position: center calc(14 * var(--digit-default-height) * -1);
 }
-.fifteen-digit {
+.digit-f {
   background-position: center calc(15 * var(--digit-default-height) * -1);
 }
-.sixteen-digit {
+.digit-g {
   background-position: center calc(16 * var(--digit-default-height) * -1);
 }
-.seventeen-digit {
+.digit-h {
   background-position: center calc(17 * var(--digit-default-height) * -1);
 }
-.eighteen-digit {
+.digit-i {
   background-position: center calc(18 * var(--digit-default-height) * -1);
 }
-.nineteen-digit {
+.digit-j {
   background-position: center calc(19 * var(--digit-default-height) * -1);
 }
