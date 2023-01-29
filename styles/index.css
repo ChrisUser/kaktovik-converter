@@ -22,6 +22,13 @@
   background: transparent;
   border: none;
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-width: 100%;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -34,6 +41,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  max-width: 100%;
+  padding: 16px;
 }
 h2 {
   letter-spacing: 0.3px;
@@ -50,6 +59,10 @@ h2 {
   display: flexbox;
   display: -ms-flexbox;
   display: -webkit-flex;
+}
+.dec-to-kaktovik-panel {
+  position: relative;
+  max-width: 90%;
 }
 .decimal-numbers-converter-input-container {
   flex-direction: row;
@@ -144,4 +157,9 @@ h2 {
 }
 .digit-j {
   background-position: center calc(19 * var(--digit-default-height) * -1);
+}
+@media only screen and (max-width: 900px) {
+  .subtitle {
+    font-size: 12px;
+  }
 }
