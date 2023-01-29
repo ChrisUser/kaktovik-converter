@@ -13,39 +13,57 @@
     <script src="./scripts/main.js"></script>
   </head>
   <body>
-    <h2>Kaktovik converter</h2>
-    <div>
-      <input id="decInput" class="" type="text" />
-      <button onclick="formatDecToKaktovik()">go!</button>
-      <p id="result"></p>
+    <div class="main-container">
+      <h1>Kaktovik converter</h1>
+      <p class="subtitle">
+        SIMPLE KAKTOVIK NUMERIC CONVERTER BOTH TO AND FROM ARABIC NUMBERS
+      </p>
+      <h3>Dec to Kaktovik</h3>
+      <div>
+        <div class="flexbox decimal-numbers-converter-input-container">
+          <input
+            id="decInput"
+            placeholder="Input an integer and click on 'Go!'"
+            class="reset-appearance interactive decimal-numbers-converter-input"
+            type="number"
+          />
+          <button
+            class="reset-appearance interactive decimal-numbers-converter-button"
+            onclick="formatDecToKaktovik()"
+          >
+            Go!
+          </button>
+        </div>
+        <p id="result"></p>
 
-      <div
-        id="kaktovikDigitsContainer"
-        class="flexbox digits-flex-container"
-      ></div>
+        <div
+          id="kaktovikDigitsContainer"
+          class="flexbox digits-flex-container"
+        ></div>
 
-      <p>All digits:</p>
-      <div class="flexbox digits-flex-container">
-        <div class="digit digit-0"></div>
-        <div class="digit digit-1"></div>
-        <div class="digit digit-2"></div>
-        <div class="digit digit-3"></div>
-        <div class="digit digit-4"></div>
-        <div class="digit digit-5"></div>
-        <div class="digit digit-6"></div>
-        <div class="digit digit-7"></div>
-        <div class="digit digit-8"></div>
-        <div class="digit digit-9"></div>
-        <div class="digit digit-a"></div>
-        <div class="digit digit-b"></div>
-        <div class="digit digit-c"></div>
-        <div class="digit digit-d"></div>
-        <div class="digit digit-e"></div>
-        <div class="digit digit-f"></div>
-        <div class="digit digit-g"></div>
-        <div class="digit digit-h"></div>
-        <div class="digit digit-i"></div>
-        <div class="digit digit-j"></div>
+        <p>All digits:</p>
+        <div class="flexbox digits-flex-container">
+          <div class="digit digit-0"></div>
+          <div class="digit digit-1"></div>
+          <div class="digit digit-2"></div>
+          <div class="digit digit-3"></div>
+          <div class="digit digit-4"></div>
+          <div class="digit digit-5"></div>
+          <div class="digit digit-6"></div>
+          <div class="digit digit-7"></div>
+          <div class="digit digit-8"></div>
+          <div class="digit digit-9"></div>
+          <div class="digit digit-a"></div>
+          <div class="digit digit-b"></div>
+          <div class="digit digit-c"></div>
+          <div class="digit digit-d"></div>
+          <div class="digit digit-e"></div>
+          <div class="digit digit-f"></div>
+          <div class="digit digit-g"></div>
+          <div class="digit digit-h"></div>
+          <div class="digit digit-i"></div>
+          <div class="digit digit-j"></div>
+        </div>
       </div>
     </div>
   </body>
