@@ -32,6 +32,10 @@ body {
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+code {
+  background-color: var(--light-grey);
+  border-radius: 2px;
+}
 .main-container {
   display: flex;
   display: flexbox;
@@ -53,6 +57,12 @@ h2 {
   letter-spacing: 0.6px;
   color: var(--black-alpha);
   margin-bottom: 24px;
+}
+.small-subtitle {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  margin: 0 0 8px;
 }
 .flexbox {
   display: flex;
@@ -78,6 +88,7 @@ h2 {
   border-radius: var(--default-border-radius) 0 0 var(--default-border-radius);
 }
 .decimal-numbers-converter-button {
+  cursor: pointer;
   background-color: var(--green);
   color: var(--white);
   font-weight: 700;
@@ -88,6 +99,8 @@ h2 {
 }
 .digits-flex-container {
   flex-direction: row;
+  align-items: flex-end;
+  font-weight: bold;
 }
 .digit {
   background: var(--white);
