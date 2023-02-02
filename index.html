@@ -25,13 +25,19 @@
       <div class="dec-to-kaktovik-panel">
         <div class="flexbox decimal-numbers-converter-input-container">
           <input
+            tabindex="0"
             id="decInputField"
+            aria-label="Input an integer and click on Go!"
+            role="textbox"
             autofocus
             placeholder="Input an integer and click on 'Go!'"
             class="reset-appearance interactive decimal-numbers-converter-input"
             type="number"
           />
           <button
+            tabindex="1"
+            aria-label="Go!"
+            role="button"
             class="reset-appearance interactive decimal-numbers-converter-button"
             onclick="formatDecToKaktovik()"
           >
