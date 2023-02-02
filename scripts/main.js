@@ -4,7 +4,7 @@ let kaktovikDigitsContainer
 
 function generateDigitDiv(digitValue) {
   const div = document.createElement("div")
-  div.setAttribute("class", "digit digit-" + digitValue)
+  div.setAttribute("class", "flexbox digit digit-" + digitValue)
   kaktovikDigitsContainer.appendChild(div)
 }
 
