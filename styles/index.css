@@ -22,6 +22,9 @@
   background: transparent;
   border: none;
 }
+.centered-text {
+  text-align: center;
+}
 html,
 body {
   margin: 0;
@@ -97,12 +100,25 @@ h2 {
   padding: 0 16px;
   border-radius: 0 var(--default-border-radius) var(--default-border-radius) 0;
 }
+.result-wrapper {
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  height: calc(var(--digit-default-height) + 8px);
+  scrollbar-gutter: stable both-edges;
+}
+.result-wrapper > .digits-flex-container {
+  position: absolute;
+}
 .digits-flex-container {
+  flex: 1;
   flex-direction: row;
   align-items: flex-end;
   font-weight: bold;
 }
 .digit {
+  flex: 1 0;
   background: var(--white);
   background-image: url(../images/digits.png);
   background-repeat: no-repeat;
