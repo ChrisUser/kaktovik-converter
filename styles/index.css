@@ -38,6 +38,10 @@ body {
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
 code {
   background-color: var(--light-grey);
   border-radius: 2px;
