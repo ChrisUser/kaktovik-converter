@@ -9,20 +9,19 @@ function generateDigitDiv(digitValue) {
 }
 
 function formatDecToKaktovik() {
-  const decInputValue = document.getElementById("decInput").value
-  const resultBox = document.getElementById("result")
+  const decInputValue = document.getElementById("decInputField").value
   kaktovikDigitsContainer = document.getElementById("kaktovikDigitsContainer")
   kaktovikDigitsContainer.innerHTML = ""
-  const dec = parseInt(decInputValue, 10)
-  const twen = dec.toString(20)
-  console.log("b-10", dec)
-  console.log("b-20", twen)
-  resultBox.innerHTML = twen
-  const revertedDigits = twen.split("").reverse().join("")
-  let i = revertedDigits.length
-  while (i) {
-    generateDigitDiv(revertedDigits[i - 1])
-    console.log(revertedDigits[i - 1])
-    i--
+  const decimalSeparatedNumbers = decInputValue.split(".").slice(0, 2)
+  for (let j = 0; j < decimalSeparatedNumbers.length; j++) {
+    if (j > 0) kaktovikDigitsContainer.innerHTML += "."
+    const dec = parseInt(decimalSeparatedNumbers[j], 10)
+    const twen = dec.toString(20)
+    const revertedDigits = twen.split("").reverse().join("")
+    let i = revertedDigits.length
+    while (i) {
+      generateDigitDiv(revertedDigits[i - 1])
+      i--
+    }
   }
 }

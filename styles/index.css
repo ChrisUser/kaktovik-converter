@@ -22,8 +22,19 @@
   background: transparent;
   border: none;
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-width: 100%;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+code {
+  background-color: var(--light-grey);
+  border-radius: 2px;
 }
 .main-container {
   display: flex;
@@ -34,6 +45,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  max-width: 100%;
+  padding: 16px;
 }
 h2 {
   letter-spacing: 0.3px;
@@ -45,11 +58,21 @@ h2 {
   color: var(--black-alpha);
   margin-bottom: 24px;
 }
+.small-subtitle {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  margin: 0 0 8px;
+}
 .flexbox {
   display: flex;
   display: flexbox;
   display: -ms-flexbox;
   display: -webkit-flex;
+}
+.dec-to-kaktovik-panel {
+  position: relative;
+  max-width: 90%;
 }
 .decimal-numbers-converter-input-container {
   flex-direction: row;
@@ -65,6 +88,7 @@ h2 {
   border-radius: var(--default-border-radius) 0 0 var(--default-border-radius);
 }
 .decimal-numbers-converter-button {
+  cursor: pointer;
   background-color: var(--green);
   color: var(--white);
   font-weight: 700;
@@ -75,6 +99,8 @@ h2 {
 }
 .digits-flex-container {
   flex-direction: row;
+  align-items: flex-end;
+  font-weight: bold;
 }
 .digit {
   background: var(--white);
@@ -144,4 +170,9 @@ h2 {
 }
 .digit-j {
   background-position: center calc(19 * var(--digit-default-height) * -1);
+}
+@media only screen and (max-width: 900px) {
+  .subtitle {
+    font-size: 12px;
+  }
 }

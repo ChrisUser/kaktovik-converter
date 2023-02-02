@@ -19,10 +19,14 @@
         SIMPLE KAKTOVIK NUMERIC CONVERTER BOTH TO AND FROM ARABIC NUMBERS
       </p>
       <h3>Dec to Kaktovik</h3>
-      <div>
+      <p class="small-subtitle">
+        Use a period <code>.</code> for decimal numbers.
+      </p>
+      <div class="dec-to-kaktovik-panel">
         <div class="flexbox decimal-numbers-converter-input-container">
           <input
-            id="decInput"
+            id="decInputField"
+            autofocus
             placeholder="Input an integer and click on 'Go!'"
             class="reset-appearance interactive decimal-numbers-converter-input"
             type="number"
@@ -34,8 +38,7 @@
             Go!
           </button>
         </div>
-        <p id="result"></p>
-
+        <p class="small-subtitle">Result:</p>
         <div
           id="kaktovikDigitsContainer"
           class="flexbox digits-flex-container"
