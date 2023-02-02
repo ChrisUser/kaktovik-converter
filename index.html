@@ -25,17 +25,15 @@
       <div class="dec-to-kaktovik-panel">
         <div class="flexbox decimal-numbers-converter-input-container">
           <input
-            tabindex="0"
             id="decInputField"
-            aria-label="Input an integer and click on Go!"
+            aria-label="Input a number and press Go!"
             role="textbox"
             autofocus
-            placeholder="Input an integer and click on 'Go!'"
+            placeholder="Input a number and press 'Go!'"
             class="reset-appearance interactive decimal-numbers-converter-input"
             type="number"
           />
           <button
-            tabindex="1"
             aria-label="Go!"
             role="button"
             class="reset-appearance interactive decimal-numbers-converter-button"
@@ -51,30 +49,215 @@
             class="flexbox digits-flex-container"
           ></div>
         </div>
-
-        <p>All digits:</p>
-        <div class="flexbox digits-flex-container">
-          <div class="flexbox digit digit-0"></div>
-          <div class="flexbox digit digit-1"></div>
-          <div class="flexbox digit digit-2"></div>
-          <div class="flexbox digit digit-3"></div>
-          <div class="flexbox digit digit-4"></div>
-          <div class="flexbox digit digit-5"></div>
-          <div class="flexbox digit digit-6"></div>
-          <div class="flexbox digit digit-7"></div>
-          <div class="flexbox digit digit-8"></div>
-          <div class="flexbox digit digit-9"></div>
-          <div class="flexbox digit digit-a"></div>
-          <div class="flexbox digit digit-b"></div>
-          <div class="flexbox digit digit-c"></div>
-          <div class="flexbox digit digit-d"></div>
-          <div class="flexbox digit digit-e"></div>
-          <div class="flexbox digit digit-f"></div>
-          <div class="flexbox digit digit-g"></div>
-          <div class="flexbox digit digit-h"></div>
-          <div class="flexbox digit digit-i"></div>
-          <div class="flexbox digit digit-j"></div>
+      </div>
+      <div class="flexbox kaktovik-to-dec-panel">
+        <h3>Kaktovik to decimal</h3>
+        <p class="small-subtitle">Press on a card to input the character.</p>
+        <div class="flexbox kaktovik-keyboard">
+          <button
+            aria-label="0"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('0')"
+          >
+            <div class="flexbox digit digit-0"></div>
+            <span>0</span>
+          </button>
+          <button
+            aria-label="1"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('1')"
+          >
+            <div class="flexbox digit digit-1"></div>
+            <span>1</span>
+          </button>
+          <button
+            aria-label="2"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('2')"
+          >
+            <div class="flexbox digit digit-2"></div>
+            <span>2</span>
+          </button>
+          <button
+            aria-label="3"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('3')"
+          >
+            <div class="flexbox digit digit-3"></div>
+            <span>3</span>
+          </button>
+          <button
+            aria-label="4"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('4')"
+          >
+            <div class="flexbox digit digit-4"></div>
+            <span>4</span>
+          </button>
+          <button
+            aria-label="5"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('5')"
+          >
+            <div class="flexbox digit digit-5"></div>
+            <span>5</span>
+          </button>
+          <button
+            aria-label="6"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('6')"
+          >
+            <div class="flexbox digit digit-6"></div>
+            <span>6</span>
+          </button>
+          <button
+            aria-label="7"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('7')"
+          >
+            <div class="flexbox digit digit-7"></div>
+            <span>7</span>
+          </button>
+          <button
+            aria-label="8"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('8')"
+          >
+            <div class="flexbox digit digit-8"></div>
+            <span>8</span>
+          </button>
+          <button
+            aria-label="9"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('9')"
+          >
+            <div class="flexbox digit digit-9"></div>
+            <span>9</span>
+          </button>
+          <button
+            aria-label="10"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('a')"
+          >
+            <div class="flexbox digit digit-a"></div>
+            <span>10</span>
+          </button>
+          <button
+            aria-label="11"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('b')"
+          >
+            <div class="flexbox digit digit-b"></div>
+            <span>11</span>
+          </button>
+          <button
+            aria-label="12"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('c')"
+          >
+            <div class="flexbox digit digit-c"></div>
+            <span>12</span>
+          </button>
+          <button
+            aria-label="13"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('d')"
+          >
+            <div class="flexbox digit digit-d"></div>
+            <span>13</span>
+          </button>
+          <button
+            aria-label="14"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('e')"
+          >
+            <div class="flexbox digit digit-e"></div>
+            <span>14</span>
+          </button>
+          <button
+            aria-label="15"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('f')"
+          >
+            <div class="flexbox digit digit-f"></div>
+            <span>15</span>
+          </button>
+          <button
+            aria-label="16"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('g')"
+          >
+            <div class="flexbox digit digit-g"></div>
+            <span>16</span>
+          </button>
+          <button
+            aria-label="17"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('h')"
+          >
+            <div class="flexbox digit digit-h"></div>
+            <span>17</span>
+          </button>
+          <button
+            aria-label="18"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('i')"
+          >
+            <div class="flexbox digit digit-i"></div>
+            <span>18</span>
+          </button>
+          <button
+            aria-label="19"
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('j')"
+          >
+            <div class="flexbox digit digit-j"></div>
+            <span>19</span>
+          </button>
+          <button
+            id="keyboardDotButton"
+            aria-label="."
+            role="button"
+            class="reset-appearance interactive flexbox digit-input-card"
+            onclick="inputKaktovikDigit('.')"
+          >
+            <div class="flexbox dot-button">.</div>
+          </button>
+          <button
+            aria-label="Go!"
+            role="button"
+            class="reset-appearance interactive kaktovik-keyboard-enter-button"
+            onclick="formatKaktovikToDec()"
+          >
+            Go!
+          </button>
         </div>
+        <p class="small-subtitle">The input will appear below:</p>
+        <div class="flexbox result-wrapper">
+          <div id="kakInputField" class="flexbox digits-flex-container"></div>
+        </div>
+        <p class="small-subtitle">Result:</p>
+        <div id="decimalResultContainer" style="width: 100%"></div>
       </div>
     </div>
   </body>

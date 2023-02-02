@@ -4,6 +4,7 @@
   --white: #ffffff;
   --light-grey: #eeeeee;
   --black-alpha: rgba(0, 0, 0, 0.45);
+  --divider-color: rgba(0, 0, 0, 0.14);
   --blue: #2964ec;
   --green: #09bc8a;
   --default-border-radius: 8px;
@@ -12,7 +13,9 @@
   box-sizing: border-box;
   outline: none;
 }
-.interactive:focus {
+.interactive:focus,
+.digit-input-card:hover,
+.kaktovik-keyboard-enter-button:hover {
   outline: 2px solid var(--blue);
 }
 .reset-appearance {
@@ -73,9 +76,21 @@ h2 {
   display: -ms-flexbox;
   display: -webkit-flex;
 }
-.dec-to-kaktovik-panel {
+.dec-to-kaktovik-panel,
+.kaktovik-to-dec-panel {
   position: relative;
-  max-width: 90%;
+  width: 40%;
+  max-width: 900px;
+}
+.kaktovik-to-dec-panel {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.kaktovik-to-dec-panel > .small-subtitle:not(:first-of-type) {
+  margin-top: 16px;
+  width: 100%;
 }
 .decimal-numbers-converter-input-container {
   flex-direction: row;
@@ -105,8 +120,7 @@ h2 {
   position: relative;
   width: 100%;
   overflow-x: auto;
-  height: calc(var(--digit-default-height) + 8px);
-  scrollbar-gutter: stable both-edges;
+  height: calc(var(--digit-default-height) + 24px);
 }
 .result-wrapper > .digits-flex-container {
   position: absolute;
@@ -187,8 +201,62 @@ h2 {
 .digit-j {
   background-position: center calc(19 * var(--digit-default-height) * -1);
 }
+.kaktovik-keyboard {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+  width: calc(var(--digit-default-height) * 6);
+}
+.digit-input-card {
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: calc(var(--digit-default-height) + 32px);
+  border: 1px solid var(--divider-color);
+  border-radius: var(--default-border-radius);
+  padding: 4px 8px;
+  user-select: none;
+}
+.digit-input-card > span {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--black-alpha);
+  line-height: 0.84;
+}
+.kaktovik-keyboard-enter-button {
+  cursor: pointer;
+  width: calc(var(--digit-default-height) * 3 - 10px);
+  background-color: #09bc8a;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: var(--default-border-radius);
+}
+.dot-button {
+  align-items: center;
+  justify-content: center;
+  width: var(--digit-default-width);
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+#keyboardDotButton:disabled {
+  cursor: not-allowed !important;
+  outline: none !important;
+}
+#kakInputField {
+  height: var(--digit-default-height);
+}
 @media only screen and (max-width: 900px) {
   .subtitle {
     font-size: 12px;
+  }
+  .dec-to-kaktovik-panel,
+  .kaktovik-to-dec-panel {
+    max-width: unset;
+    width: 90%;
   }
 }
