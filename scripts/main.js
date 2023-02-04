@@ -5,6 +5,9 @@ let kaktovikInputField
 let decimalConversionResult
 let selectedDigits = ""
 
+// Generates a div containing the 'digitValue' relative sprite
+// before append it inside the 'containerElement' specified div.
+// The dot value is pasted inside without any further conversion.
 function generateDigitDiv(digitValue, containerElement) {
   const div = document.createElement("div")
   if (digitValue === ".") {
@@ -16,6 +19,11 @@ function generateDigitDiv(digitValue, containerElement) {
   containerElement.appendChild(div)
 }
 
+// Splits the input string into two pieces (if decimal),
+// converts each one into a base-10 integer and then a base-20
+// string. The string gets reversed and re-joined for optimization
+// purposes and for each character the 'generateDigitDiv' provides
+// the respective kaktovik digit sprite.
 function formatDecToKaktovik() {
   const decInputValue = document.getElementById("decInputField").value
   kaktovikDigitsContainer = document.getElementById("kaktovikDigitsContainer")
@@ -34,6 +42,10 @@ function formatDecToKaktovik() {
   }
 }
 
+// If the user clicks on a digit key in the Kaktovik to dec section
+// the digit value is displayed on screen with the 'generatedDigitDiv'
+// method and the value is saved inside the 'selectedDigits' for
+// a later conversion to decimal.
 function inputKaktovikDigit(digitValue) {
   if (typeof kaktovikInputField == "undefined")
     kaktovikInputField = document.getElementById("kakInputField")
@@ -41,6 +53,8 @@ function inputKaktovikDigit(digitValue) {
   selectedDigits += digitValue
 }
 
+// The 'selectedDigits' array's contents gets converted into base-20
+// integers and then base-10 strings values.
 function formatKaktovikToDec() {
   if (selectedDigits.length <= 0) return
   decimalConversionResult = document.getElementById("decimalResultContainer")
