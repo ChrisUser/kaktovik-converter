@@ -4,6 +4,10 @@ A simple kaktovik numeric converter both to and from arabic numbers.
 
 Inspired by [this Wikipedia article](https://en.wikipedia.org/wiki/Kaktovik_numerals) and a recent addition into the Unicode catalog.
 
+<br/>
+
+Thanks to [MY1L](https://github.com/MY1L) for the new digits sprites.
+
 ## Try it
 
 The **last stable version** of this project is hosted [here](https://chrisuser.github.io/kaktovik-converter/).
