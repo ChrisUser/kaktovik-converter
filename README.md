@@ -6,7 +6,7 @@ Inspired by [this Wikipedia article](https://en.wikipedia.org/wiki/Kaktovik_nume
 
 <br/>
 
-Thanks to [MY1L](https://github.com/MY1L) for the **new digits sprites**.
+Thanks to [MY1L](https://github.com/MY1L) for the **new digits sprites**!
 
 ## Try it
 
